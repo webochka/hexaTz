@@ -1,0 +1,42 @@
+.main
+	position: relative
+
+.nav
+	position: absolute
+	background: rgba(#000 , 0.6)
+	top: 0
+	left: 0
+	right: 0
+	padding: 8px 0
+	z-index: 2
+	text-align: center
+
+	&:after
+		width: 35%
+		//height: 600px
+		background: rgba(#000 , 0.4)
+		position: absolute
+		top: 100%
+		left: 0
+		clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%)
+
+	&__link
+		color: rgba(#fff, 0.7)
+		cursor: pointer
+		padding: 0 65px
+		border-right: 1px solid rgba(#fff, 0.7)
+		+font-proxima(700)
+		font-size: 14px
+		letter-spacing: 0.7px
+		text-transform: uppercase
+
+		&:last-child
+			border-right: none
+
+		&--is-active,
+		&:hover
+			color: #fff
+	
+	
+
+
